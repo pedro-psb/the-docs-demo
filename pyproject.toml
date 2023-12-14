@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "the-docs-demo"
+version = "0.0.1"
+dependencies = [
+    "mkdocs-material",
+    "mkdocs-material[imaging]",
+    "pillow",
+    "cairosvg",
+]
+
+[tool.setuptools.packages]
+find = {}  # Scan the project directory with the default parameters
